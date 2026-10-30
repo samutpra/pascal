@@ -1,0 +1,32 @@
+object FormMain: TFormMain
+  Left = 400
+  Height = 200
+  Top = 250
+  Width = 360
+  BorderStyle = bsSingle
+  Caption = 'Hello World'
+  ClientHeight = 200
+  ClientWidth = 360
+  Position = poScreenCenter
+  LCLVersion = '4.8.0.0'
+  object LabelMessage: TLabel
+    Left = 0
+    Height = 40
+    Top = 50
+    Width = 360
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'Press the button'
+    Font.Height = -24
+    ParentFont = False
+  end
+  object ButtonHello: TButton
+    Left = 120
+    Height = 36
+    Top = 120
+    Width = 120
+    Caption = 'Say Hello'
+    OnClick = ButtonHelloClick
+    TabOrder = 0
+  end
+end
